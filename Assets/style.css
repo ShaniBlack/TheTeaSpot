@@ -1,7 +1,12 @@
 /* NAV BAR */
 @import url('https://fonts.googlepis.com/css?family=Monserrat:400,600'); */
 
-body{
+/* #navbar-brand{
+    text-align: left;
+    font-family: 'Cinzel', serif;
+} */
+
+/* body{
     margin: 0;
     font-family: 'Montserrat', sans-serif; 
 }
@@ -13,6 +18,14 @@ ul{
     list-style-type: none;
     margin: 0; 
     padding: 0;
+}
+
+.webname{
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: left;
 }
 .container{
     text-align: center;
@@ -27,11 +40,29 @@ header{
 }
 .menu{
     width: 25px;
-    margin-top: 45%;
+    /* margin-top: 45%; */
+
+/* Hiding nav bar */
+
+/* .exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
 }
 
+.exit-btn img{
+    width: 15px;
+    cursor: pointer;
+} 
+
+.section image {
+    text-align: center;
+} */
+
+
 /* Search Bar */
-html,body{
+/* html,body{
     height:100%;
     margin:0;
 }
@@ -52,7 +83,7 @@ p{
     display:table-cell;
     text-align:center;
     vertical-align:middle
-}
+} */
 
 /* Search Bar Style */
 .search {

@@ -5,52 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/style.css">
     <!-- FOR SEARCH BAR -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
 </head>
 <body>
     <div class="container">
         <!-- The Webpage name & the navbar -->
-        <!-- <div class="row"></div> -->
-        <header>
-            <!-- Nav Bar -->
-            <nav>
+        <div class="row">
+            <header>
+                <!-- Nav Bar -->
+                <div class="webname" style="float: left;">The Tea Spot</div>
+                
+            <div class="pos-f-t" style="float: right;">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                        <h4 class="text-white">Collapsed content</h4>
+                        <span class="text-muted">Toggleable via the navbar brand.</span>
+                    </div>
+                </div>
+                <nav class="navbar navbar-dark bg-dark" style="float: left;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+            
+
+            <!-- <nav>
                 <a href="#" class="hide-desktop">
                     <img src="./Images/nav.svg" alt="toggle menu" class="menu" id="menu">
                 </a>
                 
                 <ul class="show-desktop hide-mobil" id="nav">
+                    Search Bar
+                    <div class="cntr">
+                        <div class="cntr-innr">
+                            <label class="search" for="inpt_search">
+                                <input id="inpt_search" type="text"/>
+                            </label>
+                            <p>Hover to search for tea.</p>
+                        </div>
+                    </div>
+                    Menu Options
                     <li id="exit" class="exit-btn hide-desktop"><img src="./Images/exit.svg" alt="exit menu"></li>
                     <li><a href="#">home</a></li>
                     <li><a href="#">trending news</a></li>
                     <li><a href="#">topics</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
-            </nav>
-
-            <!-- Search Bar -->
-            <div class="cntr">
-                <div class="cntr-innr">
-                  <label class="search" for="inpt_search">
-                        <input id="inpt_search" type="text" class="hide-mobile"/>
-                    </label>
-                    <p>Hover to search for tea.</p>
+                
+            </nav> -->
+            
+        </header>
+    </div>
+        
+        <!-- The News Articles -->
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, cumque quidem, minus illo neque rerum accusantium porro reprehenderit delectus non culpa deleniti hic ullam, corporis ratione esse pariatur quibusdam ut qui molestias ducimus id optio ipsum temporibus. Vero, eaque corporis alias optio fugit laudantium atque iusto repellat, repudiandae omnis dolores aperiam eos expedita commodi provident consequuntur? Animi recusandae nesciunt necessitatibus, a eum quae maxime quas temporibus! Obcaecati excepturi fuga cupiditate perspiciatis adipisci dignissimos vitae in ad praesentium suscipit voluptatibus reprehenderit deleniti, repellendus soluta numquam delectus, nisi quae, quod corrupti voluptates culpa. Repudiandae possimus porro laborum eius voluptate nulla dolorem quasi eligendi omnis odio, tempora vero dolore temporibus veritatis fugiat, nostrum eveniet aliquid consectetur? Culpa dolor maxime pariatur soluta alias. Dignissimos aut asperiores nesciunt a in. Necessitatibus inventore in consequuntur libero aperiam earum pariatur asperiores accusantium quasi consequatur! Harum explicabo, delectus vero itaque in earum alias fugiat eligendi voluptatum maxime debitis!</div>
+                <div class="col-6">
+                    <div class="row">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem inventore ex qui, vero praesentium dolorem ad optio neque nesciunt dolores sint mollitia aut veniam veritatis officia nihil maxime accusamus sapiente! Animi sequi, quod aliquam magni voluptate consequuntur optio vitae atque repudiandae ipsum repellat adipisci cum? Porro dolore fugit veritatis temporibus.</div>
+                    <div class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro id vel recusandae beatae debitis odio enim nisi dolor repellat repellendus, veniam nesciunt dolore provident?</div>
+                    <div class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere alias doloribus cum. Blanditiis distinctio deserunt aperiam culpa non facere fuga, architecto adipisci voluptatem neque eius eum aut, aliquid commodi nisi recusandae sunt! Molestiae delectus ab, eligendi veritatis aspernatur quam expedita cupiditate deleniti molestias quas! Cumque reiciendis esse quibusdam exercitationem.</div>
                 </div>
             </div>
-        </header>
+            <div class="row">
+                <div class="col-12">Eius omnis suscipit exercitationem atque similique maxime blanditiis, reprehenderit pariatur nemo! Sint optio reiciendis, est dignissimos deleniti in, mollitia ab recusandae dolorem a ea nesciunt? Id dicta quod nostrum unde consequatur odit quaerat cumque aliquam? Itaque, necessitatibus fugiat deleniti harum praesentium modi quod, consequatur molestias nihil repudiandae laudantium sequi eos voluptatum neque quibusdam tempora? Laboriosam, voluptates obcaecati odit doloremque fugiat ea ut a quis voluptatem alias nihil quia libero animi facilis quibusdam! Dolorum ad ea voluptas dolore quos deleniti fugit. Architecto accusantium sint delectus, odio voluptatum cupiditate expedita, eligendi voluptatibus doloribus vero minima dolor saepe vel. Excepturi facilis quod enim dicta perferendis! Libero minima voluptatum sit doloribus labore? Ad, ut esse provident possimus maiores libero hic beatae ab corrupti quis at architecto reprehenderit officiis odio totam ullam laborum. Quia facilis quo dignissimos voluptatem recusandae, adipisci quaerat aliquid impedit placeat velit autem, magnam corporis, exercitationem repellat qui temporibus reiciendis iusto non.</div>
+            </div>
+        </div> -->
 
-        <!-- The News Articles -->
-        <!-- <div class="row"></div> 
-            <div class="col"></div>
-            <div class="col"></div>
-        <div class="row"></div> -->
-
-        <!-- The Visited Page -->
-        <!-- <div class="row"></div>
-    </div> -->
+       
 
 
     
