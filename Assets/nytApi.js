@@ -14,8 +14,6 @@ $.ajax({
     // console.log(response.results[i].multimedia[0].url);
     // console.log(response.results[i].url);
 for (let i = 0; i < response.results.length; i++) {
-    // const oneNews = response.results[i];
-
     let newString = `<h1 class = col-7>${response.results[i].title}</h1>
     <div class = col-5>${response.results[i].abstract}</div>
     <img class = col-5 src="${response.results[i].multimedia[0].url}">
