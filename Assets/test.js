@@ -1,42 +1,42 @@
-// // API URL and key
-// let latestUrl =
-//   "https://api.currentsapi.services/v1/search?keywords=&language=en&apiKey=tG_ULlR7sKGiUfm3iBaH7wvbUVRDpIwqs98FCt11_aI8DFlL";
-// // request from the API
-// let req = new Request(latestUrl);
-// fetch(req)
-//   .then((response) => response.json())
-//   .then((response) => {
-//     console.log(response);
+let keyWord = " ";
+function setValue(event) {
+  event.preventDefault();
+  keyWord = $(".form-control").val();
+  let topicUrl =
+    "https://api.currentsapi.services/v1/search?keywords=" +
+    keyWord +
+    "&language=en&" +
+    "apiKey=tG_ULlR7sKGiUfm3iBaH7wvbUVRDpIwqs98FCt11_aI8DFlL";
 
-//     // for loop after for each title,description,img, url
-//     for (let i = 0; i < response.news.length; i++) {
-//       const oneNews = response.news[i];
+  $(".col-6 strong").text("");
 
-//       let newString = `<h3 class = col-7>${response.news[i].title}</h3>
-//     <div class = col-5>${response.news[i].description}</div>
-//     <img class = col-5 src="${
-//       response.news[i].image === "None"
-//         ? "./Assets/spillTheTea.PNG"
-//         : response.news[i].image
-//     }">
-//     <div class = col-4>${response.news[i].url}</div>`;
+  $(".col-6 p").text("");
 
-//       let returnInfo = fragmentFromString(newString);
-//       document.querySelector(".container1").appendChild(returnInfo);
-//     }
-//   });
+  let datNewNew = new Request(topicUrl);
+  fetch(datNewNew)
+    .then((response) => response.json())
+    .then((response) => {
+      for (let i = 0; i < 5; i++) {
+        const topicNews = response.news[i];
 
-// function fragmentFromString(strHTML) {
-//   return document.createRange().createContextualFragment(strHTML);
-// }
-///////////////////////////////
+        let searchString = `<a href="${topicNews.url}"><h3>${
+          topicNews.title
+        }</h3></a>
+    <div>${topicNews.description}</div>
+    <img class = "col-6" src="${
+      topicNews.image === "None" ? "./Assets/spillTheTea.PNG" : topicNews.image
+    }">
+    
+    `;
 
-// let topicUrl =
-//   "https://api.currentsapi.services/v1/search?" +
-//   "keywords=" +
-//   keyWord +
-//   "&language=en&" +
-//   "apiKey=tG_ULlR7sKGiUfm3iBaH7wvbUVRDpIwqs98FCt11_aI8DFlL";
-// let keyWord = " ";
+        let topicReturn = searchFormSting(searchString);
+        document.querySelector(".container1").appendChild(topicReturn);
+      }
+    });
 
-// document.querySelector("#something")
+  function searchFormSting(newString) {
+    return document.createRange().createContextualFragment(newString);
+  }
+}
+
+$(".btn").on("click", setValue);
