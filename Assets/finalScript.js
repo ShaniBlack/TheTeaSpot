@@ -20,7 +20,6 @@ $.ajax({
 function fragmentFromString(strHTML) {
   return document.createRange().createContextualFragment(strHTML);
 }
-/////////////////
 
 // Currents API URL and key
 let latestUrl =
