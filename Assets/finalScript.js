@@ -1,4 +1,3 @@
-// NYT API URL and key
 let queryUrl =
   "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=PteyFR3MCeNPLqxoT4wRM3TRFVSMhNrx";
 
@@ -8,7 +7,7 @@ $.ajax({
 }).then(function (responseNY) {
   for (let i = 0; i < 3; i++) {
     const newsNY = responseNY.results[i];
-    let newString = `<a href="${newsNY.url}"><h3>${newsNY.title}</h3></a>
+    let newString = `<a class="titleNews" href="${newsNY.url}"><h3>${newsNY.title}</h3></a>
     <div>${newsNY.abstract}</div>
     <img class="col-6" src="${newsNY.multimedia[0].url}">
    `;
@@ -21,17 +20,14 @@ $.ajax({
 function fragmentFromString(strHTML) {
   return document.createRange().createContextualFragment(strHTML);
 }
-/////////////////
 
-// Currents API URL and key
 let latestUrl =
   "https://api.currentsapi.services/v1/latest-news?language=en&apiKey=tG_ULlR7sKGiUfm3iBaH7wvbUVRDpIwqs98FCt11_aI8DFlL";
-// request from the API
+
 let req = new Request(latestUrl);
 fetch(req)
   .then((response) => response.json())
   .then((response) => {
-    // for loop after for each title,description,img, url
     for (let i = 0; i < 3; i++) {
       const oneNews = response.news[i];
 

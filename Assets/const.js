@@ -12,6 +12,8 @@ function setValue(event) {
 
   $(".col-6 p").text("");
 
+  $(".searchTopic").text("");
+
   let datNewNew = new Request(topicUrl);
   fetch(datNewNew)
     .then((response) => response.json())
@@ -19,18 +21,16 @@ function setValue(event) {
       for (let i = 0; i < 5; i++) {
         const topicNews = response.news[i];
 
-        let searchString = `<a href="${topicNews.url}"><h3>${
+        let searchString = `<a href="${topicNews.url}" class="titleNews"><h3>${
           topicNews.title
         }</h3></a>
     <div>${topicNews.description}</div>
     <img class = "col-6" src="${
       topicNews.image === "None" ? "./Assets/spillTheTea.PNG" : topicNews.image
-    }">
-    
-    `;
+    }">`;
 
         let topicReturn = searchFormSting(searchString);
-        document.querySelector(".container1").appendChild(topicReturn);
+        document.querySelector(".searchTopic").appendChild(topicReturn);
       }
     });
 
