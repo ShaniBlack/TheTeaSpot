@@ -31,12 +31,12 @@
 // }
 ///////////////////////////////
 
-let topicUrl =
-  "https://api.currentsapi.services/v1/search?" +
-  "keywords=" +
-  keyWord +
-  "&language=en&" +
-  "apiKey=tG_ULlR7sKGiUfm3iBaH7wvbUVRDpIwqs98FCt11_aI8DFlL";
-let keyWord = " ";
+// let topicUrl =
+//   "https://api.currentsapi.services/v1/search?" +
+//   "keywords=" +
+//   keyWord +
+//   "&language=en&" +
+//   "apiKey=tG_ULlR7sKGiUfm3iBaH7wvbUVRDpIwqs98FCt11_aI8DFlL";
+// let keyWord = " ";
 
 // document.querySelector("#something")
