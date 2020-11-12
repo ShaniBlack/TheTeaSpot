@@ -5,11 +5,11 @@ $.ajax({
     method: "GET"
 }).then(function (response) {
     
-for (let i = 0; i < response.results.length; i++) {
-    let newString = `<h1 class = col-7>${response.results[i].title}</h1>
-    <div class = col-5>${response.results[i].abstract}</div>
+for (let i = 0; i < 3; i++) {
+    let newString = `<h3 class = col>${response.results[i].title}</h3>
+    <div class = col>${response.results[i].abstract}</div>
     <img class = col-5 src="${response.results[i].multimedia[0].url}">
-    <div class = col-4>${response.results[i].url}</div>`;
+    <div class = col>${response.results[i].url}</div>`;
 
     let returnInfo = fragmentFromString(newString);
     document.querySelector(".container2").appendChild(returnInfo);
