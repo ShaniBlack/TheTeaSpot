@@ -1,10 +1,8 @@
 // API URL and key
-var url =
-  "https://api.currentsapi.services/v1/search?" +
-  "keywords=Amazon&language=en&" +
-  "apiKey=tG_ULlR7sKGiUfm3iBaH7wvbUVRDpIwqs98FCt11_aI8DFlL";
+let latestUrl =
+  "https://api.currentsapi.services/v1/search?keywords=&language=en&apiKey=tG_ULlR7sKGiUfm3iBaH7wvbUVRDpIwqs98FCt11_aI8DFlL";
 // request from the API
-var req = new Request(url);
+let req = new Request(latestUrl);
 fetch(req)
   .then((response) => response.json())
   .then((response) => {
@@ -14,7 +12,7 @@ fetch(req)
     for (let i = 0; i < response.news.length; i++) {
       const oneNews = response.news[i];
 
-      let newString = `<h1 class = col-7>${response.news[i].title}</h1>
+      let newString = `<h3 class = col-7>${response.news[i].title}</h3>
     <div class = col-5>${response.news[i].description}</div>
     <img class = col-5 src="${
       response.news[i].image === "None"
@@ -31,3 +29,14 @@ fetch(req)
 function fragmentFromString(strHTML) {
   return document.createRange().createContextualFragment(strHTML);
 }
+///////////////////////////////
+
+let topicUrl =
+  "https://api.currentsapi.services/v1/search?" +
+  "keywords=" +
+  keyWord +
+  "&language=en&" +
+  "apiKey=tG_ULlR7sKGiUfm3iBaH7wvbUVRDpIwqs98FCt11_aI8DFlL";
+let keyWord = " ";
+
+// document.querySelector("#something")
