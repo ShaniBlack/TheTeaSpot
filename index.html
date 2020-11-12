@@ -3,18 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Tea Spot</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link src="./Assets/style.css"></link>
+    <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+    <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
+    <!-- Own Style CSS link -->
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@500&family=Playfair+Display+SC&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div class="container1 col-12 justify-content-center"></div>
-    <script src="./Assets/script.js"></script>
+    <header>
+      <!-- Nav Bar -->
+      <div class="card" style="background-color: rgb(116, 113, 113);">
+        <div class="card-body">
+      </div>
+      
+      <div class="card">
+        <div class="card-body">
+          <h2 style="font-family: 'Playfair Display SC', serif; text-align: center;">The Tea Spot</h2>
+      </div>
+        
+      <div class="card">
+        <div class="card-body">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./webPages/trendingNews.html">Trending News</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./webPages/usNews.html"> US <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./webPages/worldNews.html">World</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./webPages/politicalNews.html">Politics</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./webPages/healthNews.html">Health</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./webPages/tech.html">Tech</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html" tabindex="-1">Home</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="where's the tea.." aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">spill</button>
+              </form>
+            </div>
+          </nav> 
+      </div>
+    </header>
+
+    <section>
+      <!-- The News Articles -->
+      <div class="container">
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-6">
+            <h6 class=title style="text-align: center;"><strong>Title</strong></h6>
+            <p class="container1"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sed nam aspernatur minus, excepturi ab maiores voluptatum odio mollitia voluptate. A necessitatibus accusamus aut officiis porro quia fuga rem totam vel fugit perferendis, similique sit magnam perspiciatis iusto sint eum ratione maiores praesentium aspernatur. Assumenda magni adipisci quidem distinctio! Maiores doloremque minima eum sit natus officia quasi quis in dolor saepe accusamus blanditiis quod tempore libero est molestias ut dignissimos, reprehenderit optio maxime, esse, pariatur tempora alias. Magni id facere vel voluptatibus suscipit earum placeat vitae nobis, delectus blanditiis veritatis dignissimos reprehenderit libero porro cupiditate recusandae, optio repellat tempora sequi?</p>
+          </div>
+          <div class="col-6">
+            <h6 class=title style="text-align: center;"><strong>Title</strong></h6>
+            <p class="container2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sed nam aspernatur minus, excepturi ab maiores voluptatum odio mollitia voluptate. A necessitatibus accusamus aut officiis porro quia fuga rem totam vel fugit perferendis, similique sit magnam perspiciatis iusto sint eum ratione maiores praesentium aspernatur. Assumenda magni adipisci quidem distinctio! Maiores doloremque minima eum sit natus officia quasi quis in dolor saepe accusamus blanditiis quod tempore libero est molestias ut dignissimos, reprehenderit optio maxime, esse, pariatur tempora alias. Magni id facere vel voluptatibus suscipit earum placeat vitae nobis, delectus blanditiis veritatis dignissimos reprehenderit libero porro cupiditate recusandae, optio repellat tempora sequi?</p>
+          </div>
+        </div>
+
+        <!-- Recently Viewed Articles -->
+        <div class="row">
+          <div class="title" class="col-12" style="margin-top: 20px;"><strong>Recently Viewed</strong></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed debitis molestias harum nostrum recusandae provident beatae laudantium? Facere eligendi adipisci officiis a ipsum recusandae dolorem assumenda, similique dignissimos excepturi fuga. Asperiores repellendus corrupti eius voluptas in vitae, pariatur nisi ducimus harum necessitatibus repellat vel fuga atque inventore cupiditate minima voluptates hic. Quia unde, expedita, quibusdam illum id est modi eum eius consectetur laborum aut necessitatibus esse officia mollitia accusantium in, cum ex! Eaque quasi repellendus qui dignissimos modi necessitatibus nam eos consectetur, consequatur cupiditate doloribus consequuntur possimus enim labore nisi a nulla reprehenderit dolorem perferendis quibusdam sunt, ducimus ullam architecto praesentium. Alias consequuntur iusto, laborum, fuga voluptatum expedita labore doloribus, saepe corrupti quae dicta id aspernatur repudiandae tempora et necessitatibus ipsum minus assumenda iure nemo officia omnis magnam velit? Maiores cum expedita repudiandae, blanditiis ex, delectus libero ut inventore explicabo velit, qui eveniet? Blanditiis, aspernatur obcaecati tenetur est atque quis voluptas minus reiciendis soluta! Dolorum labore et, veritatis minus consequatur recusandae cum. Nobis nemo labore perferendis et, quos mollitia ex sunt unde autem voluptas velit nisi libero odio possimus fugiat earum atque dolorum vitae doloremque soluta? Dicta qui quisquam corrupti, accusantium molestias dolorum veritatis et at, dignissimos est ratione voluptatem!
+          </p>
+        
+        </div>
+      </div>
+    </section>
+
+    <script src="./Assets/test.js"></script>
+    <script src="./Assets/finalScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
   </body>
 </html>
