@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World News</title>
+    <title>Health</title>
 
-    <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
-    <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
     <!-- Own Style CSS link -->
@@ -23,13 +21,13 @@
       
       <div class="card">
         <div class="card-body">
-          <h2 style="font-family: 'Playfair Display SC', serif; text-align: center;"> The Tea Spot </h2>
+          <h2 style="font-family: 'Playfair Display SC', serif; text-align: center;"> The Tea Spot </h2> 
       </div>
         
       <div class="card">
         <div class="card-body">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="./trendingNews.html">Trending News</a>
+            <a class="navbar-brand" href="../index.html">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -54,9 +52,6 @@
                     <a class="dropdown-item" href="./tech.html">Technology</a>
                   </div>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html" tabindex="-1">Home</a>
-                </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="where's the tea.." aria-label="Search">
@@ -68,12 +63,12 @@
     </header>
 
     <section>
-      <!-- The usNews Articles -->
+      <!-- The WorldNews Articles -->
       <div class="container">
         <div class="row" style="margin-top: 20px;">
-          <div class="col-12">
-            <h6 class=title style="text-align: center;"><strong>Title</strong></h6>
-            <p class="columnLeft"> Lorem ipsum dolor sit, amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi id soluta molestiae deserunt rem alias perspiciatis, cum quas iusto accusamus assumenda aspernatur quis dolores ad, ducimus commodi, ex earum dicta ab. Deleniti voluptatibus quasi necessitatibus recusandae, commodi vitae perferendis alias omnis, delectus in voluptates sint perspiciatis dolorum autem aspernatur consequatur quae blanditiis ullam fuga possimus, est mollitia. Officia dolorum facere alias deleniti obcaecati! Quae laudantium corrupti quasi nobis repellendus. Quis fugit suscipit praesentium, dolores voluptates architecto inventore. Voluptatum, ea quidem ipsum nobis quibusdam commodi unde asperiores fugit eum magni blanditiis? Quas repellendus labore expedita incidunt quaerat, iusto vitae ex, quasi perferendis est quo! Iste sit repellendus perspiciatis dolores facere non, a ratione. Totam esse odio, velit modi reiciendis, placeat magnam repellat numquam nobis consectetur quis. Alias, cumque, suscipit tenetur deleniti similique fugit rerum odio earum nemo consequuntur, numquam hic delectus quidem. Delectus ea veritatis sapiente libero beatae exercitationem minima laudantium?consectetur adipisicing elit. Fugiat sed nam aspernatur minus, excepturi ab maiores voluptatum odio mollitia voluptate. A necessitatibus accusamus aut officiis porro quia fuga rem totam vel fugit perferendis, similique sit magnam perspiciatis iusto sint eum ratione maiores praesentium aspernatur. Assumenda magni adipisci quidem distinctio! Maiores doloremque minima eum sit natus officia quasi quis in dolor saepe accusamus blanditiis quod tempore libero est molestias ut dignissimos, reprehenderit optio maxime, esse, pariatur tempora alias. Magni id facere vel voluptatibus suscipit earum placeat vitae nobis, delectus blanditiis veritatis dignissimos reprehenderit libero porro cupiditate recusandae, optio repellat tempora sequi?</p>
+          <div class="col-6">
+            <h6 class=health style="text-align: center;"><strong>World News</strong></h6>
+            <p class="topicArticles"></p>
           </div>
 
         <!-- Recently Viewed Articles -->
@@ -85,10 +80,18 @@
       </div>
     </section>
 
-    <script src="./Assets/script.js"></script>
-    <script src="./Assets/nytApi.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+    
+
+    <script src="../Assets/allPages.js"></script>
   </body>
 </html>
