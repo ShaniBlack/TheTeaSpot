@@ -11,9 +11,9 @@ NYtimes.api https://developer.nytimes.com/apis
 Currents.api https://currentsapi.services/en
 
 ##Screenshots
-<img src="./Assets/teaSpotHP" alt="Home page">
-<img src="./Assets/teaSpotMobileSearch" alt="Mobile home page with Search bar open">
-<img src="./Assets/teaSpotLocalS" alt="Future past viewed articles.">
+<img src="./Assets/teaSpotHP.PNG" alt="Home page">
+<img src="./Assets/teaSpotMobileSearch.PNG" alt="Mobile home page with Search bar open">
+<img src="./Assets/teaSpotLocalS.PNG" alt="Future past viewed articles.">
 
 ##Links
 Github: https://github.com/ShaniBlack/TheTeaSpot
