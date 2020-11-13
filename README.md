@@ -16,11 +16,11 @@ Currents.api https://currentsapi.services/en
 <img src="./Assets/teaSpotLocalS.PNG" alt="Future past viewed articles.">
 
 ## Links
-Github: https://github.com/ShaniBlack/TheTeaSpot
-Deployed: https://shaniblack.github.io/TheTeaSpot/
+* Github: https://github.com/ShaniBlack/TheTeaSpot
+* Deployed: https://shaniblack.github.io/TheTeaSpot/
 
 ## Collaborators
 
-[Ivy Gabrielle Nalo] (https://github.com/inalo1)
-[Ryan Henson] (https://github.com/Ryan-Henson)
-[Shani Black] (https://github.com/ShaniBlack)
+[Ivy Gabrielle Nalo](https://github.com/inalo1)
+[Ryan Henson](https://github.com/Ryan-Henson)
+[Shani Black](https://github.com/ShaniBlack)
