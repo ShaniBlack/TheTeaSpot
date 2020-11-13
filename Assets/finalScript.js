@@ -7,10 +7,10 @@ $.ajax({
   method: "GET",
 }).then(function (response) {
   for (let i = 0; i < 3; i++) {
-    let newString = `<h3>${response.results[i].title}</h3>
-    <div>${response.results[i].abstract}</div>
-    <img class="col-6" src="${response.results[i].multimedia[0].url}">
-    <div>${response.results[i].url}</div>`;
+    let newString = `<h3 class="newsTitle">${response.results[i].title}</h3>
+    <div class="newsDescription">${response.results[i].abstract}</div>
+    <center><img class="newsImg col-6" alt="centered img" src="${response.results[i].multimedia[0].url}"></center>
+    <div class="newsUrl">${response.results[i].url}</div>`;
 
     let returnInfo = fragmentFromString(newString);
     document.querySelector(".container2").appendChild(returnInfo);
@@ -36,14 +36,14 @@ fetch(req)
     for (let i = 0; i < 3; i++) {
       const oneNews = response.news[i];
 
-      let newString = `<h3>${response.news[i].title}</h3>
-    <div>${response.news[i].description}</div>
-    <img class = "col-6" src="${
+      let newString = `<h3 class="newsTitle">${response.news[i].title}</h3>
+    <div class="newsDescription">${response.news[i].description}</div>
+    <center><img class ="newsImg col-6" alt="centered img" src="${
       response.news[i].image === "None"
         ? "./Assets/spillTheTea.PNG"
         : response.news[i].image
-    }">
-    <div>${response.news[i].url}</div>`;
+    }"></center>
+    <div class="newsUrl">${response.news[i].url}</div>`;
 
       let returnInfo = fragmentFromString(newString);
       document.querySelector(".container1").appendChild(returnInfo);
