@@ -21,6 +21,6 @@ Currents.api https://currentsapi.services/en
 
 ## Collaborators
 
-*[Ivy Gabrielle Nalo](https://github.com/inalo1)
-*[Ryan Henson](https://github.com/Ryan-Henson)
-*[Shani Black](https://github.com/ShaniBlack)
+* [Ivy Gabrielle Nalo](https://github.com/inalo1)
+* [Ryan Henson](https://github.com/Ryan-Henson)
+* [Shani Black](https://github.com/ShaniBlack)
