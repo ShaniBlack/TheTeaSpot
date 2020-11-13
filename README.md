@@ -1,40 +1,26 @@
-# Unit 7: Project 1
+#The Tea Spot
 
-## Overview
+##Description
 
-Welcome to Project 1! This is an important step in your full-stack journey as you will now use your newly acquired skills and knowledge to build web application from scratch. With your team, you will conceive and execute a design that solves a real-world problem by integrating data received from multiple server-side API requests. Because you will be working collaboratively, you will learn agile development methodologies and implement feature and bug fixes using the git branch workflow and pull requests.
+Do news sources/websites ever bother you with just how much is going on on their web pages that you exit the page as soon as you open it? That these sources are way too overwhelming that you don’t really ever know where to start, but it’s all you’ve got? Or that certain sources really only publish news articles that they approve of or maybe fits their specific values and viewpoints?
+Well we introduce to you, THE TEA SPOT, Your number 1 hot spot for trending news. Where news articles are sourced from different credible sources, all in one.
 
-## Key Topics
+##Apis
 
-- Server-side APIs
-- Git branching workflow
-- Agile software development
+NYtimes.api https://developer.nytimes.com/apis
+Currents.api https://currentsapi.services/en
 
-## Comprehension Check
+##Screenshots
+<img src="./Assets/teaSpotHP" alt="Home page">
+<img src="./Assets/teaSpotMobileSearch" alt="Mobile home page with Search bar open">
+<img src="./Assets/teaSpotLocalS" alt="Future past viewed articles.">
 
-You will be employer-ready if you can answer the following questions:
+##Links
+Github: https://github.com/ShaniBlack/TheTeaSpot
+Deployed: https://shaniblack.github.io/TheTeaSpot/
 
-1. What is agile software development?
-2. What is an MVP?
-3. If you pull down a teammate's branch and you have merge conflicts, how do you handle it?
+##Collaborators
 
-## Learning Objectives
-
-You will be employer-competitive if you are able to:
-
-- Speak technically about a feature you implemented in your project
-- Explain and execute git branching workflow in a collaborative project
-- Resolve merge conflicts
-- Explain agile software development
-- Design, build, and deploy a client-side web application using GitHub Pages
-- Prepare a professional presentation and repository README for your project
-
-## Helpful Links
-
-- [Agile Methodology](https://en.wikipedia.org/wiki/Agile_software_development)
-- [Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-- [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial/getting_started)
-
----
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+[Ivy Gabrielle Nalo] (https://github.com/inalo1)
+[Ryan Henson] (https://github.com/Ryan-Henson)
+[Shani Black] (https://github.com/ShaniBlack)
