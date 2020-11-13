@@ -1,4 +1,3 @@
-/* Style for Search Button */
 .btn:hover {
   background-color: rgb(122, 116, 116);
   border: rgb(116, 113, 113);
@@ -8,27 +7,20 @@
   font-family: "Martel", serif;
 }
 
-/* Style for news articles */
-
-.newsTitle{
-  font-family: 'Teko', sans-serif;
+.titleNews {
+  font-family: "Teko", sans-serif;
   text-align: center;
   margin-top: 20px;
 }
 
-.newsDescription{
-  font-family: 'PT Serif', serif;
+.description {
+  font-family: "PT Serif", serif;
   text-align: center;
   margin-top: -10px;
 }
 
-.newsUrl {
-  text-align: center;
-} 
-
-.newsImg{
+.newsImg {
   height: 50%;
   width: 50%;
   margin-top: 10px;
-
 }

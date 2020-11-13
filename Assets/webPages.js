@@ -1,6 +1,6 @@
 let newsTopic = " ";
 $(document).ready(function () {
-  newsTopic = $(".col-6 strong").val();
+  newsTopic = $(".dontWorryBoutIt strong").text();
   let url =
     "https://api.currentsapi.services/v1/search?keywords=" +
     newsTopic +
@@ -13,9 +13,11 @@ $(document).ready(function () {
   }).then(function (response) {
     for (let i = 0; i < 5; i++) {
       const oneNews = response.news[i];
-      let newString = `<a href="${oneNews.url}"><h3>${oneNews.title}</h3></a>
-      <div>${oneNews.description}</div>
-      <img class= "col-6" src="${
+      let newString = `<a class="titleNews" href="${oneNews.url}"><h3>${
+        oneNews.title
+      }</h3></a>
+      <div class="description">${oneNews.description}</div>
+      <center><img class= "col-6" src="${
         oneNews.image === "None" ? "../Assets/spillTheTea.PNG" : oneNews.image
       }">`;
       let returnInfo = fragmentFromString(newString);
