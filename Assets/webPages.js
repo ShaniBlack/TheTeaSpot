@@ -1,6 +1,6 @@
 let newsTopic = " ";
 $(document).ready(function () {
-  newsTopic = $(".col-6 strong").val();
+  newsTopic = $(".dontWorryBoutIt strong").text();
   let url =
     "https://api.currentsapi.services/v1/search?keywords=" +
     newsTopic +
