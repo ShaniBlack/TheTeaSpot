@@ -52,21 +52,7 @@ let storedNews = JSON.parse(localStorage.getItem("recentLink"));
 if (storedNews != null) {
   recentLink = storedNews;
 }
-
-
-// getRecents();
-
-// function addRecents();
-// for (let i = 0; i < 9; i++) {
-//   const addRecent = addRecents[i];
   
-// }
-
-
-
-// 
-  
-// }
 
 function clickedNews() {
   localStorage.setItem("recentLink", JSON.stringify(recentLink));
